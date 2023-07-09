@@ -1,29 +1,12 @@
-const listaDeToppings = document.getElementById('lista-toppings');
+const toppings = document.getElementsByClassName("topping");
 
-console.log(listaDeToppings.parentElement);
+// function mostrarClic(e){
+//     console.log(e.target.innerText);
+// }
 
-console.log(listaDeToppings.parentNode);
+for (const topping of toppings){
+    topping.addEventListener("click", (e) => {
+        console.log(e.target.innerText);
+    });
+}
 
-console.log(listaDeToppings.parentElement.parentElement);
-
-console.log(listaDeToppings.children);
-
-console.log(listaDeToppings.firstChild);
-
-console.log(listaDeToppings.children[0]);
-
-console.log(listaDeToppings.lastChild);
-
-console.log(listaDeToppings.firstElementChild);
-
-console.log(listaDeToppings.lastElementChild);
-
-console.log(listaDeToppings.previousElementSibling);
-
-console.log(listaDeToppings.nextElementSibling);
-
-console.log(listaDeToppings.nextSibling);
-
-console.log(listaDeToppings.previousSibling);
-
-console.log(listaDeToppings.firstElementChild.firstElementChild);
